@@ -21,6 +21,7 @@ namespace Aplicacion_Jeronimo
             var filas = 10;
             var columnas = 10;
 
+
             for (int i = 0; i < filas; i++)
             {
                 for (int j = 0; j < columnas; j++)
@@ -29,23 +30,22 @@ namespace Aplicacion_Jeronimo
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine();
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Ingrese las coordenas para atacar al barco ");
+            Console.WriteLine("Ingrese las coordenadas del barco ");
             string ataquebarco = (Console.ReadLine());
 
+            for (int i = 0; i < filas; i++)
             {
-                for (int i = 0; i < filas; i++)
+                for (int j = 0; j < columnas; j++)
                 {
-                    for (int j = 0; j < columnas; j++)
-                    {
-                        Console.Write(" ~");
-                    }
-                    Console.WriteLine();
-
+                    Console.Write(" 0");
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine();
+
 
         }
     }
